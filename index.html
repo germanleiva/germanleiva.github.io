@@ -1,48 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Germán Leiva – HCI Researcher</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Germán Leiva</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+  <link rel="stylesheet" href="styles.css"/>
 </head>
 <body>
-  <header>
-    <h1>Germán Leiva</h1>
-    <p class="tagline">HCI researcher, AR/VR expert, UX consultant, Interaction Design educator.</p>
-    <p class="bio">
-      Designing and implementing software solutions with a human focus. Currently Assistant Professor at Aarhus University.
-      My work blends Human-Computer Interaction, Computational Thinking, and Mixed Reality.
-    </p>
+
+  <nav class="navbar">
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#expertise">Expertise</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#research">Research</a></li>
+    </ul>
+  </nav>
+
+  <header id="home" class="header-flex">
+    <img src="images/website-pic.PNG" alt="Profile Picture" class="profile-pic">
+    <div class="header-text">
+      <h1>Germán Leiva</h1>
+      <p class="tagline">HCI researcher, Software Engineering, Interaction Design educator.</p>
+      <p class="bio">Designing and implementing software solutions with a human focus.</p>
+    </div>
   </header>
 
   <section id="expertise">
-    <h2>Areas of Interest</h2>
+    <h2>Interests</h2>
     <ul class="tags">
       <li>Human-Computer Interaction</li>
-      <li>Computational Thinking</li>
-      <li>Mixed Reality</li>
       <li>Prototyping Tools</li>
+      <li>Mixed Reality</li>
+      <li>Computational Thinking</li>
     </ul>
-
     <h2>Technical Skills</h2>
+    <h3>Skills</h3>
+    <ul class="skills">
+      <li>Software Engineering</li><li>UX/UI Design</li><li>AR/VR Development</li>
+      <li>Data Visualization</li><li>ML Integration</li>
+    </ul>
+    <h3>Programming Languages</h3>
+    <ul class="skills">
+      <li>Swift</li><li>Objective-C</li><li>JavaScript</li><li>Java</li><li>Python</li><li>C++</li><li>C</li><li>Smalltalk</li><li>Haskell</li><li>Prolog</li>
+    </ul>
     <h3>Apple Ecosystem</h3>
     <ul class="skills">
       <li>ARKit</li><li>AVFoundation</li><li>CoreAnimation</li><li>RealityKit</li><li>UIKit</li>
-      <li>Foundation</li><li>Core Data</li><li>CloudKit</li><li>SpriteKit</li><li>SceneKit</li>
-      <li>HealthKit</li><li>HomeKit</li><li>MapKit</li><li>Metal</li><li>PassKit</li>
-      <li>SiriKit</li><li>Vision</li><li>WebKit</li>
-    </ul>
-
-    <h3>Languages & Tools</h3>
-    <ul class="skills">
-      <li>Swift</li><li>Objective-C</li><li>Xcode</li><li>Instruments</li>
-    </ul>
-
-    <h3>Other Skills</h3>
-    <ul class="skills">
-      <li>Software Engineering</li><li>UX Design</li><li>AR/VR Development</li>
-      <li>Data Visualization</li><li>ML Integration</li>
+      <li>Core Data</li><li>SceneKit</li>
     </ul>
   </section>
 
@@ -51,22 +57,22 @@
     <div class="project-grid">
 
       <div class="project">
-        <iframe src="https://www.youtube.com/embed/5QsvjrbKeI4" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/nnMeLnikL6Y" allowfullscreen></iframe>
         <div class="content">
-          <h3>Pronto</h3>
-          <p>AR prototyping tool for iPadOS. Used at Adobe MAX and patented.</p>
-          <a href="https://www.youtube.com/watch?v=5QsvjrbKeI4" target="_blank">Talk at Adobe Max</a>
-          <a href="https://www.youtube.com/watch?v=1PcEXTpR8As" target="_blank">Talk at CHI</a>
+          <h3>Rapido</h3>
+          <p>Multi-device interactive AR prototype generation using video and state machines.</p>
+          <p><a href="https://www.youtube.com/watch?v=nnMeLnikL6Y" target="_blank"><i class="fas fa-microphone"></i> Talk at UIST</a></p>
+          <p><a href="https://github.com/germanleiva/rapido-project" target="_blank"><i class="fab fa-github"></i> View on GitHub</a></p>
         </div>
       </div>
 
       <div class="project">
-        <iframe src="https://www.youtube.com/embed/nnMeLnikL6Y" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/5QsvjrbKeI4" allowfullscreen></iframe>
         <div class="content">
-          <h3>Rapido</h3>
-          <p>Interactive prototype generation using video and state machines.</p>
-          <a href="https://www.youtube.com/watch?v=nnMeLnikL6Y" target="_blank">Talk at UIST</a>
-          <a href="https://github.com/germanleiva/rapido-project" target="_blank">View on GitHub</a>
+          <h3>Pronto</h3>
+          <p>Zero-code AR prototyping tool for iPadOS. Presented at Adobe MAX and patented.</p>
+          <p><a href="https://www.youtube.com/watch?v=5QsvjrbKeI4" target="_blank"><i class="fas fa-microphone"></i> Talk at Adobe Max</a></p>
+          <p><a href="https://www.youtube.com/watch?v=1PcEXTpR8As" target="_blank"><i class="fas fa-microphone"></i> Talk at CHI</a></p>
         </div>
       </div>
 
@@ -74,9 +80,9 @@
         <iframe src="https://www.youtube.com/embed/-1pc7M_4TVI" allowfullscreen></iframe>
         <div class="content">
           <h3>Montage</h3>
-          <p>Multi-device AR video prototyping tool. Built with Swift & Objective-C.</p>
-          <a href="https://www.youtube.com/watch?v=-1pc7M_4TVI" target="_blank">Talk at UIST</a>
-          <a href="https://github.com/germanleiva/montage" target="_blank">View on GitHub</a>
+          <p>Multi-device AR video prototyping tool using real-time video streaming between phones and tablets.</p>
+          <p><a href="https://www.youtube.com/watch?v=-1pc7M_4TVI" target="_blank"><i class="fas fa-microphone"></i> Talk at UIST</a></p>
+          <p><a href="https://github.com/germanleiva/montage" target="_blank"><i class="fab fa-github"></i> View on GitHub</a></p>
         </div>
       </div>
 
@@ -85,7 +91,8 @@
         <div class="content">
           <h3>Enact</h3>
           <p>Bridging design–development gaps using custom interaction videos.</p>
-          <a href="https://github.com/germanleiva/Enact" target="_blank">View on GitHub</a>
+          <p><a href="https://www.youtube.com/watch?v=-1pc7M_4TVI" target="_blank"><i class="fas fa-microphone"></i> Talk at CHI (TOCHI)</a></p>
+          <p><a href="https://github.com/germanleiva/Enact" target="_blank"><i class="fab fa-github"></i> View on GitHub</a></p>
         </div>
       </div>
 
@@ -93,41 +100,42 @@
         <iframe src="https://www.youtube.com/embed/vekis9PFFz4?start=13" allowfullscreen></iframe>
         <div class="content">
           <h3>VideoClipper</h3>
-          <p>iPadOS app for in-camera storyboarding and video editing. Available on App Store.</p>
-          <a href="https://apps.apple.com/us/app/hci-videoclipper/id1451698249" target="_blank">App Store Link</a>
+          <p>iPadOS app for in-camera storyboarding and video editing. Since 2015 used in the HCI program at Paris-Saclay.</p>
+          <p><a href="https://doi.org/10.1145/3613904.3642458" target="_blank"><i class="fas fa-bullhorn"></i> Read the paper</a></p>
+          <p><a href="https://apps.apple.com/us/app/hci-videoclipper/id1451698249" target="_blank"><i class="fab fa-apple"></i> App Store</a></p>
         </div>
       </div>
 
-<!-- Carousel Project: Jukeboss -->
-<div class="project">
-    <div class="carousel">
-      <div class="carousel-images">
-        <img src="images/jukeboss1.jpg" alt="Jukeboss Screenshot 1">
-        <img src="images/jukeboss2.png" alt="Jukeboss Screenshot 2">
-        <img src="images/jukeboss3.png" alt="Jukeboss Screenshot 3">
-        <img src="images/jukeboss4.jpg" alt="Jukeboss Screenshot 4">
-        <img src="images/jukeboss5.jpg" alt="Jukeboss Screenshot 5">
-        <img src="images/jukeboss6.png" alt="Jukeboss Screenshot 6">
+      <div class="project">
+        <div class="carousel">
+          <div class="carousel-images">
+            <img src="images/jukeboss1.jpg" alt="Jukeboss Screenshot 1">
+            <img src="images/jukeboss2.png" alt="Jukeboss Screenshot 2">
+            <img src="images/jukeboss3.png" alt="Jukeboss Screenshot 3">
+            <img src="images/jukeboss4.jpg" alt="Jukeboss Screenshot 4">
+            <img src="images/jukeboss5.jpg" alt="Jukeboss Screenshot 5">
+            <img src="images/jukeboss6.png" alt="Jukeboss Screenshot 6">
+          </div>
+          <button class="carousel-prev">&#10094;</button>
+          <button class="carousel-next">&#10095;</button>
+        </div>
+        <div class="content">
+          <h3>Jukeboss</h3>
+          <p>Interactive music installation for events, parties, and nightclubs. Mobile application for iOS and Android. MacOS plugin.</p>
+          <p><a href="https://www.eit.europa.eu/news-events/news/eit-ict-labs-paris-students-win-young-european-enterprise-year" target="_blank"><i class="fas fa-bullhorn"></i> On the news</a></p>
+          <p><a href="https://www.facebook.com/jukeboss/" target="_blank"><i class="fab fa-facebook-square"></i> View on Facebook</a></p>
+        </div>
       </div>
-      <button class="carousel-prev">&#10094;</button>
-      <button class="carousel-next">&#10095;</button>
+
     </div>
-    <div class="content">
-      <h3>Jukeboss</h3>
-      <p>Interactive music installation for events, parties, and nightclubs.</p>
-      <a href="https://www.facebook.com/jukeboss/" target="_blank">View on Facebook</a>
-    </div>
-  </div>
+  </section>
 
-</div>
-</section>
+  <section id="research">
+    <h2>Publications</h2>
+    <div id="publications"></div>
+  </section>
 
-<section id="research">
-<h2>Research Publications</h2>
-<div id="publications"></div>
-</section>
-
-<script src="carousel.js"></script>
-<script src="bibparser.js"></script>
+  <script src="carousel.js"></script>
+  <script src="bibparser.js"></script>
 </body>
 </html>
